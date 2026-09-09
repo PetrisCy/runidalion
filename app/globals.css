@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+:root {
+  --background: #fffdf8;
+  --foreground: #57534e;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.sponsor-mask {
+  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  overflow: hidden;
+}
+
+.sponsor-track {
+  display: flex;
+  animation: sponsor-scroll 26s linear infinite;
+}
+
+@keyframes sponsor-scroll {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .sponsor-track {
+    animation-play-state: paused;
+  }
+}
