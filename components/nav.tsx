@@ -1,7 +1,10 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+
+import runIdalionLogo from "../public/runidalion-logo.png";
 
 const navigation = [
   {
@@ -18,15 +21,20 @@ export default function Nav() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-stone-200 bg-[#fffdf8]/95 backdrop-blur">
       <nav
-        className="mx-auto flex w-full max-w-6xl items-center justify-between px-5 py-4 sm:px-8"
+        className="mx-auto flex w-full max-w-6xl items-center justify-between px-5 py-2 sm:px-8"
         aria-label="Main navigation"
       >
         <Link
           href="/"
-          className="flex h-10 min-w-28 items-center justify-center rounded-md border-2 border-dashed border-stone-300 bg-white px-4 text-sm font-semibold tracking-wide text-stone-500 transition-colors hover:border-amber-300 hover:text-amber-700"
+          className="flex h-14 items-center"
           aria-label="Home"
         >
-          LOGO
+          <Image
+            src={runIdalionLogo}
+            alt="Run Idalion"
+            className="h-14 w-auto"
+            priority
+          />
         </Link>
 
         <div className="hidden items-center gap-8 md:flex">

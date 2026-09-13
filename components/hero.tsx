@@ -25,12 +25,7 @@ export default function Hero() {
           <p className="mb-4 text-sm font-semibold uppercase tracking-[0.3em] text-amber-200">
             Run Idalion
           </p>
-          <h1
-            id="hero-title"
-            className="text-5xl font-bold tracking-tight drop-shadow-sm sm:text-7xl lg:text-8xl"
-          >
-            November 22
-          </h1>
+         
           <Link
             href="https://in.events-runningincyprus.com/runidalion-2026?currentPage=select-competition"
             target="_blank"

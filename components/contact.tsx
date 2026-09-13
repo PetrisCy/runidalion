@@ -30,7 +30,7 @@ export default function Contact() {
       <span id="register" className="absolute top-0" aria-hidden="true" />
       <div className="mx-auto max-w-4xl text-center">
         <p className="text-sm font-semibold uppercase tracking-[0.28em] text-amber-700">Questions? Give us a call</p>
-        <h2 id="contact-title" className="mt-5 text-4xl font-bold tracking-tight text-stone-700 sm:text-6xl">
+        <h2 id="contact-title" className="mt-5 text-3xl font-bold tracking-tight text-stone-700 sm:text-3xl">
           <Link href="tel:+35799610972" className="transition-colors hover:text-amber-700">
             99610972
           </Link>

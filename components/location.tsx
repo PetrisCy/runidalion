@@ -8,7 +8,7 @@ const runDetails = [
   },
   {
     label: "Location",
-    value: "Near the Bridge",
+    value: "Eleftherias Street",
     detail: "Dali 2540, Cyprus",
   },
   {
@@ -80,18 +80,7 @@ export default function Location() {
           </p>
         </div>
 
-        <div className="grid overflow-hidden rounded-3xl border border-emerald-900/10 bg-white shadow-[0_20px_60px_rgba(65,90,70,0.14)] lg:grid-cols-[0.85fr_1.15fr]">
-          <div className="min-h-72 bg-stone-100 sm:min-h-80 lg:min-h-[420px]">
-            <iframe
-              title="Map showing the Runidalion meeting point near the bridge in Dali"
-              src="https://www.google.com/maps?q=Bridge%2C%20Dali%202540%2C%20Cyprus&output=embed"
-              className="h-full min-h-72 w-full border-0 sm:min-h-80 lg:min-h-[420px]"
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              allowFullScreen
-            />
-          </div>
-
+        <div className="overflow-hidden rounded-3xl border border-emerald-900/10 bg-white shadow-[0_20px_60px_rgba(65,90,70,0.14)]">
           <div className="flex flex-col justify-center bg-[#fffdf8] p-7 sm:p-10">
             <div className="grid gap-x-8 sm:grid-cols-2">
               {runDetails.map((item) => (
@@ -104,7 +93,7 @@ export default function Location() {
             </div>
 
             <Link
-              href="https://www.google.com/maps/search/?api=1&query=Bridge%2C%20Dali%202540%2C%20Cyprus"
+              href="https://maps.app.goo.gl/xhekZe5S4ntWAFep8"
               target="_blank"
               rel="noopener noreferrer"
               className="mt-9 inline-flex w-fit items-center rounded-full bg-[#52705a] px-5 py-3 text-sm font-semibold text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-[#405c48] hover:shadow-md focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#52705a]"
