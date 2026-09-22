@@ -3,12 +3,12 @@ import Link from "next/link";
 const socialLinks = [
   {
     label: "Email Run Idalion",
-    href: "mailto:hello@runidalion.com",
+    href: "mailto:Pakapa@cytanet.com.cy",
     icon: <path strokeLinecap="round" strokeLinejoin="round" d="M3 6.5 12 13l9-6.5M4 5h16a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Z" />,
   },
   {
     label: "Run Idalion on Instagram",
-    href: "https://www.instagram.com/",
+    href: "https://www.instagram.com/runidalion/",
     icon: (
       <>
         <rect x="3" y="3" width="18" height="18" rx="5" />
@@ -19,7 +19,7 @@ const socialLinks = [
   },
   {
     label: "Run Idalion on Facebook",
-    href: "https://www.facebook.com/",
+    href: "https://www.facebook.com/runidalion",
     icon: <path strokeLinecap="round" strokeLinejoin="round" d="M14 21v-8h3l.5-4H14V7c0-1.2.7-2 2.2-2H18V1.5c-.8-.1-1.8-.2-2.8-.2C12 1.3 10 3.2 10 6.7V9H7v4h3v8" />,
   },
 ];

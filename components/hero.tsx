@@ -23,7 +23,7 @@ export default function Hero() {
       <div className="relative flex min-h-[calc(100svh-73px)] w-full items-end px-5 pb-[12vh] pt-20 sm:px-10 lg:px-16 lg:pb-[14vh]">
         <div className="max-w-2xl text-white">
           <p className="mb-4 text-sm font-semibold uppercase tracking-[0.3em] text-amber-200">
-            Run Idalion
+            Runidalion
           </p>
          
           <Link
