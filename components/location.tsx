@@ -1,4 +1,5 @@
-import Link from "next/link";
+import Image from "next/image";
+import donationImage from "../public/donation.jpg";
 
 const runDetails = [
   {
@@ -25,6 +26,12 @@ const runDetails = [
     label: "Awards",
     value: "Age category awards",
     detail: "Celebrate the runners and their achievements",
+  },
+  {
+    label: "Donation",
+    value: "Running for a cause",
+    detail: "Part of the proceeds will be donated to the charity shown below.",
+    image: donationImage,
   },
 ];
 
@@ -88,19 +95,18 @@ export default function Location() {
                   <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#52705a]">{item.label}</p>
                   <p className="mt-2 text-xl font-semibold text-stone-700">{item.value}</p>
                   <p className="mt-1 text-sm leading-6 text-stone-500">{item.detail}</p>
+                  {item.image && (
+                    <Image
+                      src={item.image}
+                      alt="Pancyprian Association of Parents and Friends of the Pediatric Oncology Unit"
+                      sizes="(max-width: 280px) 100vw, 192px"
+                      className="mt-4 h-auto w-full max-w-48"
+                    />
+                  )}
                 </div>
               ))}
             </div>
 
-            <Link
-              href="https://maps.app.goo.gl/xhekZe5S4ntWAFep8"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-9 inline-flex w-fit items-center rounded-full bg-[#52705a] px-5 py-3 text-sm font-semibold text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-[#405c48] hover:shadow-md focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#52705a]"
-            >
-              Open in Google Maps
-              <span aria-hidden="true" className="ml-2">↗</span>
-            </Link>
           </div>
         </div>
 
@@ -134,9 +140,6 @@ export default function Location() {
           </div>
         </div>
 
-        <p className="mt-5 text-center text-xs text-stone-400">
-          Part of the proceeds will be donated to a charity, which will be announced later.
-        </p>
       </div>
     </section>
   );

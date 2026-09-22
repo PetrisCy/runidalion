@@ -69,7 +69,9 @@ export default function NextRun() {
           </div>
 
           <Link
-            href="#location"
+            href="https://maps.app.goo.gl/xhekZe5S4ntWAFep8"
+            target="_blank"
+            rel="noopener noreferrer"
             className="mt-8 inline-flex items-center gap-2 rounded-full border border-stone-300 bg-[#fffdf8] px-5 py-3 text-sm font-semibold text-stone-600 shadow-sm transition hover:-translate-y-0.5 hover:border-amber-400 hover:text-amber-700 hover:shadow-md focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-amber-600"
           >
             <svg aria-hidden="true" viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.8">
