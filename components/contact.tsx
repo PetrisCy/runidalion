@@ -26,7 +26,7 @@ const socialLinks = [
 
 export default function Contact() {
   return (
-    <section id="contact" className="relative bg-[#f5efe3] px-5 py-20 sm:px-8 sm:py-28" aria-labelledby="contact-title">
+    <section id="contact" className="relative bg-[#f5efe3] px-5 pt-16 pb-20 sm:px-8 sm:py-28" aria-labelledby="contact-title">
       <span id="register" className="absolute top-0" aria-hidden="true" />
       <div className="mx-auto max-w-4xl text-center">
         <p className="text-sm font-semibold uppercase tracking-[0.28em] text-amber-700">Questions? Give us a call</p>

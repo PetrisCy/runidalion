@@ -67,7 +67,7 @@ export default function Location() {
   return (
     <section
       id="location"
-      className="relative overflow-hidden border-t border-[#52634f]/10 bg-[#f1f4ed] px-5 py-20 text-stone-700 sm:px-8 sm:py-28"
+      className="relative overflow-hidden border-t border-[#52634f]/10 bg-[#f1f4ed] px-5 pt-20 pb-16 text-stone-700 sm:px-8 sm:py-28"
       aria-labelledby="location-title"
     >
       <div className="absolute -right-24 -top-24 h-80 w-80 rounded-full border border-[#52634f]/10" />
